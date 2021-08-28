@@ -1,0 +1,38 @@
+.reviews {
+  margin-top: 80px;
+  padding: 45px 95px;
+  background-color: $alternate-section-color;
+}
+
+.reviews__text {
+  padding-bottom: 55px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.39;
+  color: $alternate-text-color;
+}
+
+.reviews__card {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__photo {
+  margin-right: 35px;
+}
+
+.reviews__name {
+  margin-bottom: 10px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.39;
+  color: $alternate-text-color;
+}
+
+.reviews__position {
+  font-size: 14px;
+  line-height: 1.36;
+  color: $reviews-position-color;
+}

@@ -1,0 +1,50 @@
+.cases {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
+}
+
+.cases__item {
+  width: 255px;
+  height: 255px;
+
+  margin: 15px;
+
+  padding: 30px 40px 40px 40px;
+  background-color: $alternate-section-color;
+}
+
+.cases__quantity {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $alternate-text-color;
+}
+
+.cases__text {
+  margin-bottom: 47px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.28;
+  color: $alternate-text-color;
+}
+
+.cases__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.21;
+  text-decoration-line: underline;
+  color: $accent-color;
+  transition: color 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+}
