@@ -388,6 +388,7 @@ address {
 
 .about {
   max-width: 445px;
+  margin-right: 125px;
 }
 
 .about__text {
