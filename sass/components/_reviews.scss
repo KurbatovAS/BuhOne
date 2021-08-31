@@ -1,16 +1,25 @@
 .reviews {
-  margin-top: 80px;
-  padding: 45px 95px;
+  margin-top: 60px;
+  padding: 20px 20px;
   background-color: $alternate-section-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 80px;
+    padding: 45px 95px;
+  }
 }
 
 .reviews__text {
-  padding-bottom: 55px;
+  padding-bottom: 25px;
 
   font-weight: 300;
   font-size: 18px;
   line-height: 1.39;
   color: $alternate-text-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 55px;
+  }
 }
 
 .reviews__card {
@@ -19,7 +28,17 @@
 }
 
 .reviews__photo {
-  margin-right: 35px;
+  margin-right: 10px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 35px;
+  }
+}
+
+.reviews__container {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .reviews__name {

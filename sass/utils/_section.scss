@@ -1,6 +1,16 @@
 .section {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
 }
 
 .section--alternate-bg-color {
@@ -8,16 +18,21 @@
 }
 
 .section--clients {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: $alternate-section-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .section--contact {
-  max-width: 1920px;
-  height: 623px;
-  padding-top: 122px;
-  padding-bottom: 140px;
+  max-width: 767px;
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 70px;
   margin-left: auto;
   margin-right: auto;
 
@@ -27,15 +42,36 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $main-color;
+
+  @media screen and (min-width: 768px) {
+    max-width: 900px;
+    height: auto;
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1920px;
+    height: 623px;
+    padding-top: 170px;
+    padding-bottom: 140px;
+  }
 }
 
 .section__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   font-weight: 900;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.4;
   color: $section-title-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 1.4;
+  }
 }
 
 .section__title--visually-hidden {
@@ -44,11 +80,15 @@
 
 .section__description {
   font-family: Merriweather, serif;
-
   font-weight: 900;
-  font-size: 48px;
-  line-height: 1.44;
+  font-size: 28px;
+  line-height: 1.18;
   color: $section-description-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.44;
+  }
 }
 
 .section__description--main-color {
@@ -60,6 +100,15 @@
 }
 
 .section__flexbox {
-  display: flex;
-  justify-items: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-items: space-between;
+  }
+}
+
+.section__flexbox-contacts {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-items: space-between;
+  }
 }

@@ -1,18 +1,31 @@
 .cases {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-  margin: -15px;
+    margin: -15px;
+  }
 }
 
 .cases__item {
   width: 255px;
   height: 255px;
 
-  margin: 15px;
-
   padding: 30px 40px 40px 40px;
   background-color: $alternate-section-color;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+  }
 }
 
 .cases__quantity {

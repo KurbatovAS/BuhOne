@@ -1,12 +1,25 @@
 .header {
-  display: flex;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    padding: 15px 0;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
 
-  height: 110px;
+    height: 110px;
+  }
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__menu-box {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }

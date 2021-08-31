@@ -1,31 +1,54 @@
 .contact {
-  margin-right: 100px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 100px;
+  }
 }
 
 .contact__text {
-  margin-top: 60px;
-  margin-bottom: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
   font-weight: 300;
   font-size: 18px;
   line-height: 1.39;
   color: $main-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
 }
 
 .contact__list {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contact__link {
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-weight: 300;
-  font-size: 21px;
-  line-height: 1.38;
+  font-size: 14px;
+  line-height: 1.71;
   color: $main-text-color;
 
   transition: color 250ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    font-size: 21px;
+    line-height: 1.38;
+  }
 
   &:hover,
   &:focus {
@@ -33,6 +56,14 @@
   }
 
   &:first-child {
-    margin-right: 20px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 8px;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 20px;
+    }
   }
 }

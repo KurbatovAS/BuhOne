@@ -21,12 +21,23 @@
     <header class="header">
       <div class="container header__container">
         <a href="#" class="logo"
-          ><svg width="40" height="40" class="address__icon">
+          ><svg width="40" height="40" class="logo__icon">
             <use href="./images/icons.svg#logo"></use>
           </svg>
           BuhOne</a
         >
-        <div>
+        <button
+          type="button"
+          class="navigation-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="navigation-btn__icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+            <use class="navigation-btn__icon-close" href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <div class="header__menu-box">
           <address>
             <ul class="address">
               <li class="address__item">
@@ -66,11 +77,11 @@
 
           <nav>
             <ul class="nav">
-              <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Кейсы</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+              <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+              <li class="nav__item"><a href="#Услуги" class="nav__link">Услуги</a></li>
+              <li class="nav__item"><a href="#Кейсы" class="nav__link">Кейсы</a></li>
+              <li class="nav__item"><a href="#О-компании" class="nav__link">О компании</a></li>
+              <li class="nav__item"><a href="#Контакты" class="nav__link">Контакты</a></li>
             </ul>
           </nav>
         </div>
@@ -106,7 +117,7 @@
 
       <section class="section section--alternate-bg-color">
         <div class="container">
-          <h2 class="section__title">Наши услуги</h2>
+          <h2 id="Услуги" class="section__title">Наши услуги</h2>
           <h3 class="section__description">Мы специализируемся</h3>
           <ul class="services">
             <li class="services__item">
@@ -153,7 +164,7 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section__title">О нас</h2>
+          <h2 id="О-компании" class="section__title">О нас</h2>
           <div class="section__flexbox">
             <div class="about">
               <h3 class="section__description">
@@ -170,7 +181,7 @@
               </p>
             </div>
 
-            <ul class="cases">
+            <ul id="Кейсы" class="cases">
               <li class="cases__item">
                 <p class="cases__quantity">90</p>
                 <p class="cases__text">Завершено крупных сделок</p>
@@ -259,7 +270,7 @@
             </p>
             <div class="reviews__card">
               <img src="./images/photo.png" alt="Екатерина Иванова" class="reviews__photo" />
-              <div>
+              <div class="reviews__container">
                 <h4 class="reviews__name">Екатерина Иванова</h4>
                 <p class="reviews__position">Директор ООО “Раз-два”</p>
               </div>
@@ -288,8 +299,8 @@
 
       <section class="section section--contact">
         <div class="container">
-          <h2 class="section__title section__title--visually-hidden">Контакты</h2>
-          <div class="section__flexbox">
+          <h2 id="Контакты" class="section__title section__title--visually-hidden">Контакты</h2>
+          <div class="section__flexbox-contacts">
             <div class="contact">
               <p class="section__description section__description--main-color">Связь с нами</p>
               <p class="contact__text">
@@ -345,6 +356,65 @@
       </section>
     </main>
 
+    <!-- мобильное меню -->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__btn js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="mobile-menu__icon" href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav">
+        <li class="mobile-nav__item">
+          <a href="./index.html" class="mobile-nav__link">Главная</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="./index.html#Услуги" class="mobile-nav__link">Услуги</a>
+        </li>
+        <li class="mobile-nav__item"><a href="#Кейсы" class="mobile-nav__link">Кейсы</a></li>
+        <li class="mobile-nav__item">
+          <a href="#О компании" class="mobile-nav__link">О компании</a>
+        </li>
+        <li class="mobile-nav__item"><a href="#Контакты" class="mobile-nav__link">Контакты</a></li>
+      </ul>
+
+      <ul class="address">
+        <li class="address__item">
+          <a href="tel:81112223344" class="address__link">
+            <svg width="11" height="18" class="address__icon">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+            8 (111) 222-33-44</a
+          >
+        </li>
+        <li class="address__item">
+          <a href="#" class="address__link">
+            <svg width="17" height="17" class="address__icon">
+              <use href="./images/icons.svg#clock"></use>
+            </svg>
+            Пн-Пт 10:00-18:00</a
+          >
+        </li>
+        <li class="address__item">
+          <a href="mailto:order@buhone.ru" class="address__link">
+            <svg width="23" height="17" class="address__icon">
+              <use href="./images/icons.svg#mail"></use>
+            </svg>
+            order@buhone.ru</a
+          >
+        </li>
+        <li class="address__item">
+          <a href="#" class="address__link">
+            <svg width="17" height="17" class="address__icon">
+              <use href="./images/icons.svg#geoposition"></use>
+            </svg>
+            Невский пр. 130</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <!-- Футер -->
 
     <footer class="footer">
@@ -357,5 +427,12 @@
         </ul>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

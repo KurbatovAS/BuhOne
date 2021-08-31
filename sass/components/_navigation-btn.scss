@@ -1,0 +1,27 @@
+.navigation-btn {
+  margin: 0;
+  padding: 8px 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover .navigation-btn__icon-menu,
+  &:focus .navigation-btn__icon-menu {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.navigation-btn__icon-close {
+  display: none;
+}
+
+.navigation-btn__btn[aria-expanded='true'] .navigation-btn__icon-close {
+  display: block;
+}
+
+.navigation-btn__btn[aria-expanded='true'] .navigation-btn__icon-menu {
+  display: none;
+}

@@ -1,6 +1,14 @@
 .about {
-  max-width: 445px;
-  margin-right: 125px;
+  max-width: 480px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 445px;
+    margin-right: 125px;
+  }
 }
 
 .about__text {
@@ -10,4 +18,8 @@
   font-size: 18px;
   line-height: 1.39;
   color: $alternate-text-color;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
